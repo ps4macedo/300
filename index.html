@@ -70,7 +70,7 @@ background-color: transparent;
 <hr width="45%" size="1" color="#ff5757">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">circulo, desbilite a rede (se for usar em off)<br> e reinicie o PS4.</font> Ao iniciar o console, entre novamente no navegador.";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída!</font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">PS, desbilite a rede (se for usar em off)<br> e reinicie o PS4.</font> Ao iniciar o console, entre novamente no navegador.";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};</script>
 <script src="exp_webkit.js">
 </script>
 </head>
@@ -78,7 +78,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <hr width="45%" size="1" color="#ff5757">
 <div class="invisivel" style="text-align:center">
 <div style="text-align:center">
-<font size="3">Pressione o <font color="#ee596f"><b>CIRCULO PARA SAIR.<b></font></font>
+<font size="3">Pressione o <font color="#ee596f"><b>PS PARA SAIR.<b></font></font>
 </div>
 <div style="text-align:center">
 <br><br><br>
@@ -98,7 +98,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 function dicas (dica) {
 switch (dica) {
 case '1':document.getElementById("msgs").innerHTML = 
-"<h1 style='color:#ffffff;font-size:22px;'>Limpeza e atualização da cache: Ao entrar no navegador quando aparecer o fundo branco, imediatamente, segure o circulo até aparecer a tela \"Páginas usadas confrequência\", clique no botão OPTIONS, selecione \"Excluir tudo\",confirme, OPTIONS novamente, selecione \"Histórico de navegação\", clique em OPTIONS, e \"Limpar histórico de navegação\", confirme, volte a \"Páginas usadas com frequência\", mais uma vez OPTIONS, agora selecione \"Configurações\" e \"Excluir cookies\",confirme, depois \"Limpar dados de sites\" e confirme, volte e digite o endereço do host e adicione aos favoritos.";break;
+"<h1 style='color:#ffffff;font-size:22px;'>Limpeza e atualização da cache: Ao entrar no navegador quando aparecer o fundo branco, imediatamente, segure o PS até aparecer a tela \"Páginas usadas confrequência\", clique no botão OPTIONS, selecione \"Excluir tudo\",confirme, OPTIONS novamente, selecione \"Histórico de navegação\", clique em OPTIONS, e \"Limpar histórico de navegação\", confirme, volte a \"Páginas usadas com frequência\", mais uma vez OPTIONS, agora selecione \"Configurações\" e \"Excluir cookies\",confirme, depois \"Limpar dados de sites\" e confirme, volte e digite o endereço do host e adicione aos favoritos.";break;
 case '2':document.getElementById("msgs").innerHTML = "Desconecte todos os cabos USB, antes do desbloqueio.";break;
 case '3':document.getElementById("msgs").innerHTML = "Não entre mais no navegador após o desbloqueio.";break;
 case '4':document.getElementById("msgs").innerHTML = "Ao ligar pela primeira vez no dia, aguarde 2 minutos.";break;
